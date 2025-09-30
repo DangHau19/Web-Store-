@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quản lý khách hàng</title>
+  <link rel="stylesheet" href="../css/styleKhachhang.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <img src="../Image/logostore-Photoroom.png" alt="Logo" />
+    </div>
+
+    <div class="header-right">
+      <a href="../Admin/Admin.html">Trang chủ</a>
+      <a href="Khachhang.html" class="active"><i class="fa-solid fa-users"></i> Quản lý khách hàng</a>
+    </div>
+  </div>
+
+  <!-- Nội dung -->
+  <div class="content">
+    <h2>Danh sách khách hàng</h2>
+    <table class="table-khachhang">
+      <thead>
+        <tr>
+          <th>Tài khoản</th>
+          <th>Tên khách hàng</th>
+          <th>Email</th>
+          <th>Số điện thoại</th>
+          <th>Trạng thái</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody id="customer-list">
+        <!-- dữ liệu sẽ được JS chèn -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="../js/jsKhachhang.js"></script>
+</body>
+</html>

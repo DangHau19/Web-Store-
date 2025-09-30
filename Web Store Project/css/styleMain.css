@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background:url("../Image/S2.jpg");
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center 100px;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow:auto;
+}
+/* Header */
+.logo img {
+  height: 100px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #0077b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+.others {
+  display: flex;
+  align-items: center;
+  margin-right:20px;
+}
+
+.others ul {
+  padding: 0 12px;
+  position: relative;
+}
+
+.others ul::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 70%;
+  background: #545454;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.others ul:last-child::after {
+  display: none;
+}
+
+.others ul:first-child {
+  position: relative;
+}
+
+.others ul:first-child input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  outline: none;
+}
+
+.others ul:first-child i {
+  position: absolute;
+  right: 17px;
+  top: 1.5px;
+}
+
+.others button {
+  background: #ff891bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  height:40px;
+  font-size:15px;
+}
+
+.others button:hover {
+  background: #e45f06ff;
+}
+.fa-user {
+  color: #ffb49dff;  
+  font-size: 23px; 
+}
+
+.fa-shopping-bag {
+  color: #ffb49dff;
+  font-size: 23px;
+}
+.fa-search{
+    font-size:20px;
+}

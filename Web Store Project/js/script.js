@@ -21,7 +21,7 @@ function login() {
     const savedPassword = localStorage.getItem("userPassword");
     // Nếu là User đã đăng ký
     if (email === savedEmail && password === savedPassword) {
-        window.location.href = "User.html";
+        window.location.href = "User/User.html";
         return;
     }
     // Sai thông tin

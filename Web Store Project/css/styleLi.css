@@ -5,7 +5,6 @@ body{
     justify-content: center;
     height: 100vh;
     margin: 0;
-    overflow: scroll;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -34,47 +33,6 @@ button {
     button:hover {
       background: #00c6ff;
     }
-.others {
-    position: absolute;
-    top: 10px;       
-    right: 20px;    
-    display: flex;
-    align-items: center;
-}
-.others ul{
- padding: 0 12px;
- position: relative;
-}
-.others ul::after{
-    content: "";
-    display: block;
-    width: 1px;
-    height: 70%;
-    background: #545454;
-    position: absolute;
-    right: 0;
-    top:50%;
-    transform: translateY(-50%);
-}
-.others ul:last-child::after{
-    display: none;
-}
-.others ul:first-child{
-    position: relative;
-}
-.others ul:first-child input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #333;
-    background: transparent;
-    outline: none;
-}
-.others ul:first-child i{
-    position: absolute;
-    right: 17px ;
-    top:1.5px;
-    
-}
 input{
    border: none;
    border-radius: 10px; 

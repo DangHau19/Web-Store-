@@ -1,4 +1,4 @@
-const adminEmail = "hoangdanghau19@gmail.com";
+const adminEmail = "Hoangdanghau19@gmail.com";
 const adminPassword = "1911";
 
 function login() {
