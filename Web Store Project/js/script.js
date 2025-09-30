@@ -1,7 +1,4 @@
 
-const adminEmail = "hoangdanghau19@gmail.com";
-const adminPassword = "123";
-
 // Hàm đăng ký user mới
 function register() {
     const email = document.getElementById("email").value.trim();
@@ -22,11 +19,6 @@ function login() {
     // Lấy thông tin người dùng đã đăng ký (nếu có)
     const savedEmail = localStorage.getItem("userEmail");
     const savedPassword = localStorage.getItem("userPassword");
-    // Nếu là Admin
-    if (email === adminEmail && password === adminPassword) {
-        window.location.href = "Admin.html";
-        return;
-    }
     // Nếu là User đã đăng ký
     if (email === savedEmail && password === savedPassword) {
         window.location.href = "User.html";
