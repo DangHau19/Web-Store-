@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #0077b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+}
+
+/* Menu bên phải */
+.header-right {
+    display: flex;
+    align-items: center; 
+    margin-right: 40px;
+}
+
+.header-right a, 
+.header-right button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: white;
+    background: #0096c7;
+    border: none;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.header-right a:hover, 
+.header-right button:hover {
+    background: #023e8a;
+    color: #ffdd57;
+}
+
+/* Nội dung chung */
+.content {
+    margin-top: 140px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card hiển thị thông tin */
+.info-card {
+    background: #ffffffcc;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.info-card p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Box đổi thông tin */
+.box {
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.box input {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.box input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 6px rgba(0,119,182,0.6);
+}
+
+/* Button trong box */
+.box button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #0077b6;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.box button:hover {
+    background: #023e8a;
+}
+
+/* Thông báo */
+.message {
+    margin: 15px 0;
+    color: green;
+    font-weight: bold;
+    display: none;
+}
