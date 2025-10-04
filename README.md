@@ -32,6 +32,7 @@ loại.
 • Tra cứu số lượng tồn của một sản phẩm, của sản phẩm theo loại tại một thời điểm
 • Cảnh báo sản phẩm sắp hết hàng
 • Tra cứu số lượng nhập – xuất – tồn của một sản phẩm, của sản phẩm trong một khoản thời gian.
+
 II. Các chức năng cho khách hàng (end-user)
 1. Quản lý đăng nhập:
 • Đăng kí
