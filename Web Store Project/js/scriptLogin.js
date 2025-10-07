@@ -1,3 +1,4 @@
+// Tài khoản admin có sẵn
 const adminEmail = "Hoangdanghau19@gmail.com";
 const adminPassword = "1911";
 

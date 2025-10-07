@@ -1,4 +1,4 @@
-
+// Tài khoản user sau đang kí 
 function login() {
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -15,6 +15,7 @@ function login() {
     }
     errorMsg.style.display = "block";
 }
+// Bấm enter để tìm kiếm trong trang user
 document.getElementById("searchBox").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();

@@ -1,7 +1,9 @@
+// Gán thông tin đăng kí
 function register() {
             const username = document.getElementById("username").value.trim();
             const name = document.getElementById("name").value.trim();
             const phone = document.getElementById("phone").value.trim();
+            const address = document.getElementById("address").value.trim();
             const email = document.getElementById("email").value.trim();
             const password = document.getElementById("password").value.trim();
 
@@ -11,6 +13,7 @@ function register() {
                     username: username,
                     name: name,
                     phone: phone,
+                    address:address,
                     email: email,
                     password: password
                 };
