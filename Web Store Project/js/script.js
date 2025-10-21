@@ -1,20 +1,19 @@
-// Tài khoản user sau đang kí 
 function login() {
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const errorMsg = document.getElementById("error");
+            const emailInput = document.getElementById("email").value.trim();
+            const passwordInput = document.getElementById("password").value.trim();
+            const errorMsg = document.getElementById("error");
 
-    // Lấy thông tin user đã lưu
-    const user = JSON.parse(localStorage.getItem("user"));
+            // ✅ Tài khoản cố định
+            const EMAIL_CONST = "Hoangdanghau@gmail.com";
+            const PASSWORD_CONST = "1911";
 
-    if (user && email === user.email && password === user.password) {
-        // Lưu trạng thái đăng nhập
-        localStorage.setItem("isLoggedIn", "true");
-        window.location.href = "User/User.html";
-        return;
-    }
-    errorMsg.style.display = "block";
-}
+            if (emailInput === EMAIL_CONST && passwordInput === PASSWORD_CONST) {
+                alert("🎉 Đăng nhập thành công!");
+                window.location.href = "User/User.html"; // Chuyển sang trang người dùng
+            } else {
+                errorMsg.style.display = "block";
+            }
+        }
 // Bấm enter để tìm kiếm trong trang user
 document.getElementById("searchBox").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {

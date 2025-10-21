@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
     <title>Thông tin cá nhân</title>
     <link rel="stylesheet" href="../css/styleTT.css">
 </head>
@@ -11,19 +12,22 @@
             <img src="../Image/logostore-Photoroom.png" alt="Logo">
         </div>
         <div class="header-right">
-            <!--Các chức năng-->
             <a href="User.html">Trang User</a>
             <a href="DoiTT.html">Đổi thông tin</a>
-            <button onclick="logout()">Đăng xuất</button>
+            <button onclick="window.location.href='../Main.html'">Đăng xuất</button>
         </div>
     </div>
 
     <!-- Nội dung -->
     <div class="content">
         <h1>Thông Tin Người Dùng</h1>
-        <div class="info-card" id="info"></div>
+        <div class="info-card">
+            <p><strong>👤 Username:</strong> DangHau</p>
+            <p><strong>📝 Họ và tên:</strong> Hoàng Đăng Hậu</p>
+            <p><strong>📞 Số điện thoại:</strong> 090987654321</p>
+            <p><strong>🏠 Địa chỉ:</strong> 21/18B, Bình Lợi, P13, Bình Thạnh, TP.HCM</p>
+            <p><strong>📧 Email:</strong> Hoangdanghau@gmail.com</p>
+        </div>
     </div>
-
-    <script src="../js/jsTT.js"></script>
 </body>
 </html>

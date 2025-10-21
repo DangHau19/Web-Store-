@@ -8,7 +8,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 100px;
   background-color: #0077b6;
   display: flex;
   justify-content: space-between;
@@ -21,27 +21,29 @@ body {
 .logo img {
   height: 100px;
 }
+
 .header-right {
-    display: flex;
-    align-items: center; 
-    margin-right:40px ; 
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
 }
 
 .header-right a {
-    display: inline-flex;  
-    align-items: center;   
-    gap: 6px;              
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    line-height: 1;        
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: bold;
+  line-height: 1;
 }
 
 .header-right a i {
-    font-size: 18px;       
-    vertical-align: middle;
+  font-size: 18px;
+  vertical-align: middle;
 }
+
 .content {
   margin-top: 100px;
   padding: 20px;

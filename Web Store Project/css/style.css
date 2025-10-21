@@ -107,3 +107,8 @@ input{
 .QTV:hover{
     text-decoration:underline;
 }
+#searchBox::placeholder {
+  color: #333;          
+  opacity: 1;           
+  font-weight: 500;   
+}

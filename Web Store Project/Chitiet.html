@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="css/styleChitiet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Phần chi tiết sản phẩm -->
+  <div class="product-detail">
+    <div class="image-section">
+      <img id="mainImage" src="Image/sp.jpg" alt="Sản phẩm" class="main-img">
+      <div class="thumbnail-container">
+        <img src="Image/sp.jpg" class="thumbnail" onclick="changeImage('Image/sp.jpg')">
+        <img src="Image/sp.jpg" class="thumbnail" onclick="changeImage('Image/sp.jpg')">
+        <img src="Image/sp.jpg" class="thumbnail" onclick="changeImage('Image/sp.jpg')">
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h2 class="product-title">Sản phẩm nổi bật</h2>
+      <p class="price">Giá bán: <span>200.000đ</span></p>
+
+      <div class="voucher">
+        <i class="fa fa-ticket"></i> <span>Giảm 10% cho đơn hàng trên 500.000đ</span>
+      </div>
+
+      <div class="option">
+        <label>Kiểu:</label>
+        <select id="style">
+          <option>Kiểu 1</option>
+          <option>Kiểu 2</option>
+          <option>Kiểu 3</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <label>Số lượng:</label>
+        <input type="number" id="quantity" value="1" min="1">
+      </div>
+
+      <div class="buttons">
+        <button class="add-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+        <button class="buy-now" onclick="buyNow()">Mua ngay</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thông tin shop -->
+  <div class="shop-info">
+  <img src="Image/logostore-Photoroom.png" alt="Logo shop">
+  <h3>DangHau Store</h3>
+</div>
+  <!-- Mô tả sản phẩm -->
+  <div class="product-description">
+    <h3>Mô tả sản phẩm</h3>
+      <p>Quà tặng giành cho các dịp lễ.</p>
+      <p>Sản phẩm được thiết kế tinh tế, chất liệu cao cấp, phù hợp với nhiều nhu cầu sử dụng khác nhau.</p> 
+      <p>Hình ảnh mang tính minh họa, sản phẩm thật có thể khác đôi chút về màu sắc tùy theo ánh sáng.</p>
+  </div>
+
+  <!-- Liên hệ -->
+  <div class="contact">
+    <h3>Liên hệ với chúng tôi</h3>
+    <div class="icons">
+      <i class="fa-brands fa-facebook" ></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-facebook-messenger"></i>
+      <i class="fa-brands fa-zalo"></i>
+      <i class="fa-solid fa-phone"></i>
+      <i class="fa-solid fa-envelope"></i>
+    </div>
+  </div>
+
+  <script>
+    function changeImage(imgSrc) {
+      document.getElementById("mainImage").src = imgSrc;
+    }
+
+    function addToCart() {
+      const style = document.getElementById("style").value;
+      const qty = document.getElementById("quantity").value;
+      alert(`Đã thêm ${qty} sản phẩm ${style} vào giỏ hàng!`);
+    }
+
+    function buyNow() {
+      const style = document.getElementById("style").value;
+      const qty = document.getElementById("quantity").value;
+      alert(`Bạn đã chọn mua ${qty} sản phẩm ${style}. Cảm ơn bạn đã mua hàng!`);
+    }
+  </script>
+
+</body>
+</html>

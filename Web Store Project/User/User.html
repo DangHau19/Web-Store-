@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Web Store</title>
+  <meta charset="UTF-8">
+  <title>Trang chủ</title>
   <link rel="stylesheet" href="../css/styleUser.css">
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
-   <!-- Header -->
+  <!-- Header -->
   <div class="header">
     <div class="logo">
       <img src="../Image/logostore-Photoroom.png" alt="Logo">
@@ -18,14 +18,75 @@
           <i class="fa fa-search"></i>
       </ul>
       <ul>
-          <a class="fa fa-user" href="ThongTin.html"></a>
+        <a class="fa fa-user" href="ThongTin.html"></a>
       </ul>
       <ul>
-          <a class="fa fa-shopping-bag" href="#"></a>
+        <a class="fa fa-shopping-bag" href="#"></a>
       </ul>
     </div>
   </div>
-  <script src="../js/script.js">
+
+  <!-- Slide -->
+  <div class="slideshow-container">
+    <div class="mySlides fade"><img src="../Image/slide1.png" alt="Banner 1"></div>
+    <div class="mySlides fade"><img src="../Image/slide2.jpg" alt="Banner 2"></div>
+    <div class="mySlides fade"><img src="../Image/slide3.jpg" alt="Banner 3"></div>
+    <div class="mySlides fade"><img src="../Image/slide4.jpg" alt="Banner 4"></div>
+    <div class="mySlides fade"><img src="../Image/slide5.jpg" alt="Banner 5"></div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="dot-container" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+  </div>
+
+  <!-- Danh sách sản phẩm -->
+  <div class="product-container">
+    <!-- Tạo 15–20 sản phẩm -->
+    <script>
+      for (let i = 1; i <= 24; i++) {
+       document.write(`
+         <div class="product-card" onclick="window.location.href='../Chitiet.html'">
+         <img src="../Image/sp.jpg" alt="Sản phẩm ${i}">
+         <h3>Sản phẩm ${i}</h3>
+         <p class="price">${(100 + i * 5)}.000đ</p>
+         <i class="fa fa-cart-plus cart-icon" onclick="event.stopPropagation(); openCart(${i})"></i>
+         </div>
+      `);
+     }
+    </script>
+  </div>
+
+  <!-- Popup chọn kiểu và số lượng -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h3>Chọn kiểu và số lượng</h3>
+      <label for="style">Kiểu:</label>
+      <select id="style">
+        <option>Kiểu 1</option>
+        <option>Kiểu 2</option>
+        <option>Kiểu 3</option>
+      </select>
+      <label for="quantity">Số lượng:</label>
+      <input type="number" id="quantity" value="1" min="1">
+      <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+    </div>
+  </div>
+  <script src="../js/jsUser.js"></script>
+  <script>
+    document.getElementById("searchBox").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        window.location.href = "User/Search.html";
+    }
+});
 </script>
 </body>
 </html>

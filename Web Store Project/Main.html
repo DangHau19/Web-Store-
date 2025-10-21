@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+  <meta charset="UTF-8">
   <title>Trang chủ</title>
   <link rel="stylesheet" href="css/styleMain.css">
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
-   <!-- Header -->
+  <!-- Header -->
   <div class="header">
     <div class="logo">
       <img src="Image/logostore-Photoroom.png" alt="Logo">
@@ -18,19 +18,70 @@
           <i class="fa fa-search"></i>
       </ul>
       <ul>
-          <a class="fa fa-user" href="Login.html"></a>
+        <a class="fa fa-user" href="Login.html"></a>
       </ul>
       <ul>
-          <a class="fa fa-shopping-bag" href="#"></a>
+        <a class="fa fa-shopping-bag" href="#"></a>
       </ul>
       <ul>
-          <a href="Login.html">
-            <button>Đăng Nhập</button>
-          </a>
+        <a href="Login.html">
+          <button>Đăng Nhập</button>
+        </a>
       </ul>
     </div>
   </div>
-  <!--Click enter sau khi nhập để search-->
+
+  <!-- Slide -->
+  <div class="slideshow-container">
+    <div class="mySlides fade"><img src="Image/slide1.png" alt="Banner 1"></div>
+    <div class="mySlides fade"><img src="Image/slide2.jpg" alt="Banner 2"></div>
+    <div class="mySlides fade"><img src="Image/slide3.jpg" alt="Banner 3"></div>
+    <div class="mySlides fade"><img src="Image/slide4.jpg" alt="Banner 4"></div>
+    <div class="mySlides fade"><img src="Image/slide5.jpg" alt="Banner 5"></div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="dot-container" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+  </div>
+
+  <!-- Danh sách sản phẩm -->
+  <div class="product-container">
+    <script>
+      for (let i = 1; i <= 24; i++) {
+       document.write(`
+         <div class="product-card" onclick="window.location.href='Chitiet.html'">
+         <img src="Image/sp.jpg" alt="Sản phẩm ${i}">
+         <h3>Sản phẩm ${i}</h3>
+         <p class="price">${(100 + i * 5)}.000đ</p>
+         <a href="Login.html" onclick="event.stopPropagation();">
+           <i class="fa fa-cart-plus cart-icon"></i>
+         </a>
+         </div>
+      `);
+     }
+    </script>
+  </div>
+  <!-- Liên hệ -->
+  <div class="contact">
+    <h3>Liên hệ với chúng tôi</h3>
+    <div class="icons">
+      <i class="fa-brands fa-facebook" ></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-facebook-messenger"></i>
+      <i class="fa-brands fa-zalo"></i>
+      <i class="fa-solid fa-phone"></i>
+      <i class="fa-solid fa-envelope"></i>
+    </div>
+  </div>
+  <script src="js/jsMain.js"></script>
   <script>
     document.getElementById("searchBox").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
