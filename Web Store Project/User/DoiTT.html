@@ -10,6 +10,9 @@
         <div class="logo">
             <img src="../Image/logostore-Photoroom.png" alt="Logo">
         </div>
+        <div class="header-right">
+            <a href="ThongTin.html">Trở lại</a>
+            </div>
     </div>
 
     <!-- Nội dung -->
@@ -26,18 +29,8 @@
             <!-- Thông báo -->
             <div id="message" class="message">Đang yêu cầu đổi thông tin...</div>
 
-            <button onclick="changeInfo()">Đổi thông tin</button>
+            <button>Đổi thông tin</button>
         </div>
     </div>
-    <script>
-        function changeInfo() {
-            const message = document.getElementById("message");
-            message.style.display = "block";   // hiện thông báo
-            // Sau 3s quay về thongtin.html
-            setTimeout(() => {
-                window.location.href = "Thongtin.html";
-            }, 3000);
-        }
-    </script>
 </body>
 </html>
