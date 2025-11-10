@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-color: #c5c5c585;
+  background: linear-gradient(135deg, #b9e6ff 0%, #f1fcff 100%);
   color: #333;
 }
 
@@ -15,7 +15,7 @@ body {
 
 /* ===== THANH HEADER ===== */
 .main-header {
-  background-color: #c9eff8ff;
+  background: linear-gradient(90deg, #00b4d8, #00b4d8 );
   color: white;
   padding: 12px 40px;
   display: flex;
