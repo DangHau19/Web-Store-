@@ -82,15 +82,15 @@ body {
 }
 
 .others button:hover {
-  background: #e45f06ff;
+  background: #d65a07ff;
 }
 .fa-user {
-  color: #ffb49dff;
+  color: #fd6e43ff;
   font-size: 23px;
 }
 
 .fa-shopping-bag {
-  color: #ffb49dff;
+  color: #fd6e43ff;
   font-size: 23px;
 }
 .fa-search {
