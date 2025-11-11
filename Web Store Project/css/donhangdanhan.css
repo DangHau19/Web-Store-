@@ -15,7 +15,7 @@ body {
 .order-wrapper {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   padding: 24px;
 }
 
@@ -45,6 +45,7 @@ body {
   border: 1px solid #eee;
   border-radius: 10px;
   background: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .product img {

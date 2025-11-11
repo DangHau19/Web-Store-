@@ -217,3 +217,7 @@ input[type="radio"] {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+.fa-home{
+ color: #fd6e43ff;
+  font-size: 35px;
+}

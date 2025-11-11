@@ -74,7 +74,7 @@ body {
   color: white;
   border: none;
   padding: 8px 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   font-weight: bold;
   height: 40px;
@@ -86,12 +86,12 @@ body {
 }
 .fa-user {
   color: #fd6e43ff;
-  font-size: 23px;
+  font-size: 35px;
 }
 
 .fa-shopping-bag {
   color: #fd6e43ff;
-  font-size: 23px;
+  font-size: 35px;
 }
 .fa-search {
   font-size: 20px;
@@ -165,11 +165,6 @@ body {
 
 .dot:hover {
   background-color: #717171;
-}
-#searchBox::placeholder {
-  color: #333;
-  opacity: 1;
-  font-weight: 500;
 }
 /* Product grid */
 .product-container {
@@ -388,7 +383,6 @@ body {
   padding: 10px 5px;
   font-weight: 600px;
 }
-
 .goi-y-info p {
   font-size: 15px;
   color: #333;
@@ -560,3 +554,75 @@ body {
   overflow: hidden;
   display: inline-block;
 }
+
+
+/* Form tìm kiếm giữa header */
+.search-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Thanh tìm kiếm to, bo tròn */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 45px;
+  background: white;
+  border-radius: 50px;
+  border: 2px solid #ff891b;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 0 auto; /*  căn giữa toàn bộ thanh tìm kiếm */
+}
+
+/* Khi hover hoặc focus vào input */
+.search-box:hover,
+.search-box:focus-within {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ô nhập */
+.search-box input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  color: #333;
+  padding: 0 20px;
+  line-height: 45px; /* giúp chữ nằm giữa theo chiều dọc */
+}
+
+/* Nút tìm kiếm */
+.search-box button {
+  background-color: #ff891b;
+  color: white;
+  border: none;
+  width: 55px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: background 0.25s;
+}
+
+.search-box button:hover {
+  background-color: #ff9f40;
+}
+
+/* Đảm bảo icon nằm giữa */
+.search-box button i {
+  line-height: 1;
+}
+
+
